@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://tanawatthnidecprecision.github.io/CDN_nidec/module.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Kanit:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-tomorrow.min.css"
+    />
+
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+
+      pre {
+        position: relative;
+
+        /* make space  */
+        margin: auto;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        font-family: "Kanit", sans-serif;
+        overflow: hidden;
+      }
+
+      pre button {
+        position: absolute;
+        top: 5px;
+        right: 6px;
+
+        font-size: 0.9rem;
+        padding: 0.15rem;
+        background-color: #82828220;
+
+        border: ridge 1px #7b7b7c20;
+        border-radius: 5px;
+        font-family: "Kanit", sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+
+        /*
+        text-shadow: #c4c4c4 0 0 2px;
+        */
+      }
+
+      pre button:hover {
+        cursor: pointer;
+        background-color: #bcbabb;
+      }
+
+      textarea {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(32, 34, 34);
+        color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nd-mt-2">
+      <div class="nd-card nd-w-8 nd-m-a nd-pb-4 nd-radius-2">
+        <br />
+        <img
+          src="./images/nidec_robot.png"
+          class="nd-abs nd-w-px-20"
+          style="right: 30%"
+        />
+        <center>
+          <img src="./images/logo.png" class="nd-w-2 nd-block nd-mt-4" />
+          <span class="nd-mt-1" style="color: #758963">Framework CSS </span>
+        </center>
+        <br />
+
+        <span class="nd-mb-2">
+          <h3 class="nd-ml-6">เริ่มต้น</h3>
+          <p class="nd-ml-9 nd-size-13 nd-mb-2 nd-w-10">
+            CDN (Content Delivery Network)
+            เป็นระบบที่ออกแบบมาเพื่อเพิ่มประสิทธิภาพและลดความล่าช้าในการโหลดเนื้อหาบนเว็บไซต์
+            โดยการกระจายเนื้อหา (content)
+            ไปยังเซิร์ฟเวอร์ที่ตั้งอยู่ใกล้กับผู้ใช้สุด
+          </p>
+          <p class="nd-ml-6 nd-size-13 nd-mb-2 nd-w-10">
+            ทำให้เว็บไซต์ทำงานได้เร็วขึ้นและมีประสิทธิภาพดีกว่า. หลักการทำงานของ
+            CDN
+            คือการแจกจ่ายเนื้อหาไปยังเซิร์ฟเวอร์ที่ตั้งอยู่ในตำแหน่งทางภูมิศาสตร์ที่เหมาะสมกับผู้ใช้.
+            เมื่อมีคำขอ (request) จากผู้ใช้,
+          </p>
+          <p class="nd-ml-6 nd-size-13 nd-mb-2 nd-w-10">
+            CDN จะนำเนื้อหาจากเซิร์ฟเวอร์ที่อยู่ใกล้ที่สุดมาให้
+            ซึ่งลดการล่าช้าในการโหลดข้อมูลเนื้อหา.
+          </p>
+          <b class="nd-ml-6 nd-size-13 nd-mb-2 nd-mt-2 nd-w-10 nd-block">CDN สำหรับใช้งาน</b>
+          
+          </span>
+          
+        </span>
+        
+        <pre
+          class="nd-w-9 nd-m-a nd-h-px-5"
+        ><textarea class="language-html" readonly>
+
+    <link rel="stylesheet" href="https://tanawatthnidecprecision.github.io/CDN_nidec/module.css"/>
+        </textarea></pre>
+        <span class="nd-w-10">
+          <h3 class="nd-ml-6">ปุ่มสำหรับใช้งาน</h3>
+          <p class="nd-ml-6 nd-size-13 nd-mb-2 nd-w-10">
+            ปุ่ม (button)
+            เป็นองค์ประกอบที่สามารถใช้ในการสร้างตัวเลือกที่ผู้ใช้สามารถคลิกหรือแตะเพื่อทำการกระทำหรือเปิดใช้งานฟังก์ชันต่าง
+            ๆ บนเว็บไซต์หรือแอปพลิเคชันเว็บ.
+          </p>
+        </span>
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-2">
+            <div class="nd-mb-1">
+              <button class="nd-btn-success nd-mb-1 nd-w-9">Submit</button
+              ><br />
+              <button class="nd-btn-disable nd-mb-1 nd-w-9">Disabled</button
+              ><br />
+              <button class="nd-btn-warning nd-mb-1 nd-w-9">Urgent</button
+              ><br />
+              <button class="nd-btn-blue nd-mb-1 nd-w-9">WithDraw</button><br />
+              <button class="nd-btn-red nd-mb-1 nd-w-9">Reject</button><br />
+            </div>
+          </div>
+          <div class="nd-item-grid-10">
+            <pre
+              class="nd-w-10 nd-m-a nd-h-px-26"
+            ><textarea class="language-html" readonly>
+    
+    <!-- Button for Submit ( ใช้ในกรณี กดยืนยัน ) -->
+    <button class="nd-btn-success">Submit</button>
+
+    <!-- Button for Disabled ( ใช้ในกรณี ปุ่มที่ไม่สามารถกดได้ ) -->
+    <button class="nd-btn-disable">Disabled</button>
+
+    <!-- Button for Urgent ( ใช้ในกรณี ส่งแจ้งเตือนอีกครั้ง ) -->
+    <button class="nd-btn-warning">Urgent</button>
+
+    <!-- Button for WithDraw ( ใช้ในกรณี กดย้อนกลับสถานะ ) -->
+    <button class="nd-btn-blue">WithDraw</button>
+
+    <!-- Button for Reject ( ใช้ในกรณี ยกเลิก )-->
+    <button class="nd-btn-red">Reject</button>
+  </textarea></pre>
+          </div>
+        </div>
+        <span class="nd-mb-2 nd-w-10">
+          <h3 class="nd-ml-6">Input และ Select</h3>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            ใน HTML, input มีหลายประเภทที่สามารถใช้ในการรับข้อมูลจากผู้ใช้:
+          </p>
+          <b class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2 nd-block">
+            input type="text"
+          </b>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            ใช้สำหรับรับข้อมูลจากผู้ใช้ในรูปแบบข้อความ.
+          </p>
+          <b class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2 nd-block">
+            input type="password":
+          </b>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            ใช้เหมือนกับ input type="text" แต่จะซ่อนตัวอักษรที่ผู้ใช้ป้อน, เหมาะสำหรับการป้องกันการดูรหัสผ่าน.
+          </p>
+          <b class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2 nd-block">
+            select:
+          </b>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            ใช้สร้างกล่องคำสั่ง (dropdown list) ที่ผู้ใช้สามารถเลือกรายการได้.
+            มักใช้ร่วมกับ option เพื่อระบุรายการที่สามารถเลือกได้.</p>
+        </span>
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-8">
+            <pre
+              class="nd-w-10 nd-m-a nd-h-px-24"
+            ><textarea class="language-html" readonly>
+      
+      <!-- Button for Submit ( ใช้ในกรณี กดยืนยัน ) -->
+      <input type="text" class="nd-input-normal"/>
+
+      <!-- Button for Submit ( ใช้ในกรณี กดยืนยัน ) -->
+      <input type="password" class="nd-input-normal"/>
+      
+      <!-- -->
+      <select class="nd-select-normal">
+        <option>ตัวเลือก A</option>
+        <option>ตัวเลือก B</option>
+        <option>ตัวเลือก C</option>
+        <option>ตัวเลือก D</option>
+      </select>
+    </textarea></pre>
+          </div>
+          <div class="nd-item-grid-2">
+            <div class="nd-mb-1 nd-ml-3">
+              <input
+                type="text"
+                class="nd-input-normal nd-mb-1 nd-mt-1"
+                placeholder="ข้อความ"
+              />
+              <input
+                type="password"
+                class="nd-input-normal"
+                placeholder="รหัสผ่าน"
+              />
+              <br />
+              <select class="nd-select-normal">
+                <option>ตัวเลือก A</option>
+                <option>ตัวเลือก B</option>
+                <option>ตัวเลือก C</option>
+                <option>ตัวเลือก D</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <span class="nd-mb-2 nd-w-10">
+          <h3 class="nd-ml-6">Switch</h3>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            สวิตช์นี้มักถูกออกแบบเพื่อให้ผู้ใช้สามารถเปิดหรือปิดอุปกรณ์ที่เชื่อมต่อกับ IoT ได้ง่ายและสะดวก.
+          </p>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            ตัวอย่าง UI สวิตช์ที่เกี่ยวกับ IoT อาจมีลักษณะดังนี้:
+          </p>
+          <b class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2 nd-block">
+            ปุ่มสวิตช์ (Switch Button)
+          </b>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            ปุ่มที่ผู้ใช้สามารถคลิกหรือแตะเพื่อเปิดหรือปิดอุปกรณ์. ตัวอย่างเช่นปุ่ม ON/OFF.
+          </p>
+          <b class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2 nd-block">
+            สถานะอุปกรณ์ (Device Status)
+          </b>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            แสดงสถานะปัจจุบันของอุปกรณ์ว่าเปิดหรือปิดอยู่.
+          </p>
+          <b class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2 nd-block">
+            การแสดงผลข้อมูล (Data Display)
+          </b>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            แสดงข้อมูลที่เกี่ยวข้องกับอุปกรณ์, เช่นอุณหภูมิปัจจุบัน, ความชื้น, หรือข้อมูลเซ็นเซอร์.
+          </p>
+          
+        </span>
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-8">
+            <pre
+              class="nd-w-10 nd-m-a nd-h-px-11"
+            ><textarea class="language-html" readonly>
+        
+    <!-- Button for Switch ( ใช้ในกรณีสั่งเปิดปิดเพื่อสลับ toggle ) -->
+    <label class="nd-switch">
+        <input type="checkbox">
+        <span class="nd-slider"></span>
+    </label>
+      </textarea></pre>
+          </div>
+          <div class="nd-item-grid-4">
+            <div class="nd-mb-1 nd-ml-3">
+              <label class="nd-switch nd-mt-4 nd-ml-3 nd-mr-1">
+                <input type="checkbox" />
+                <span class="nd-slider"></span>
+              </label>
+              <span class="nd-size-12">เปิดไฟ</span>
+              <br />
+            </div>
+          </div>
+        </div>
+        <span class="nd-w-10">
+          <h3 class="nd-ml-6">เมนูบาร์</h3>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            เป็นแท็กใน HTML ที่ใช้เพื่อระบุส่วนของเว็บไซต์ที่เป็นเมนูนำทางหรือเมนูการนำทาง. นั่นคือ, 
+          </p>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            nav จะใช้ร่วมกับลิงก์ที่ชี้ไปยังหน้าเว็บต่าง ๆ หรือส่วนต่าง ๆ ของเว็บไซต์ที่ให้ผู้ใช้ไปที่ส่วนต่าง ๆ ของเนื้อหาหรือฟีเจอร์พิเศษ.
+          </p>
+        </span>
+
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-12">
+            <pre
+              class="nd-w-10 nd-m-a nd-h-px-24"
+            ><textarea class="language-html" readonly>
+                  
+    <div class="nd-nav nd-fixed nd-bg-linear-green nd-w-10 nd-z-top">
+        <div class="nd-item-logo">
+            <img src="http://172.30.1.9:9919/public/logo_without.png">
+        </div>
+        <div class="nd-item nd-h-10 nd-color-white">
+            <p>Home</p>
+            <span>aaa</span>
+        </div>
+        <div class="nd-item nd-h-10 nd-color-white">
+            <p>Home</p>
+            <span>aaa</span>
+        </div>
+    </div>
+</textarea></pre>
+          </div>
+        </div>
+
+        
+        <!-- // -->
+
+        <span class="nd-w-10">
+          <h3 class="nd-ml-6">Grid</h3>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            CSS Grid (Grid Layout) เป็นระบบที่ถูกออกแบบมาเพื่อจัดการและจัดวางองค์ประกอบต่าง ๆ ในหน้าเว็บอย่างยืดหยุ่นและมีประสิทธิภาพ. ด้วย CSS Grid, คุณสามารถสร้างโครงสร้างเว็บที่ซับซ้อนได้โดยไม่จำเป็น
+          </p>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            ต้องพึ่งพาการจัดวางด้วย Flexbox หรือ float ซึ่งอาจทำให้การจัดการหน้าเว็บเป็นไปได้ยากและซับซ้อน.
+          </p>
+          <div class="nd-grid nd-w-9 nd-m-a nd-mb-2">
+            
+            <div class="nd-item-grid-12 nd-text-center nd-mb-1">
+              <div class="nd-card nd-w-10">12</div>
+            </div>
+
+            <div class="nd-item-grid-6 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">6</div>
+            </div>
+            <div class="nd-item-grid-6 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">6</div>
+            </div>
+
+            <div class="nd-item-grid-3 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">3</div>
+            </div>
+            <div class="nd-item-grid-3 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">3</div>
+            </div>
+            <div class="nd-item-grid-3 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">3</div>
+            </div>
+            <div class="nd-item-grid-3 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">3</div>
+            </div>
+
+            <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">2</div>
+            </div>
+            <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">2</div>
+            </div>
+            <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">2</div>
+            </div>
+            <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">2</div>
+            </div>
+            <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">2</div>
+            </div>
+            <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+              <div class="nd-card nd-w-10">2</div>
+            </div>
+
+          </div>
+          <br />
+        </span>
+
+        <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+          <b>Grid 12 </b>&nbsp;&nbsp;&nbsp;เหมาะสำหรับต้องการจัดองค์ประกอบให้เต็มหน้ากระดาษ
+        </p>
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-12">
+            <pre
+              class="nd-w-10 nd-m-a nd-h-px-14"
+            ><textarea class="language-html" readonly>
+
+              <!-- -->
+              <div class="nd-grid nd-w-9 nd-m-a">
+                <!-- เต็มหน้ากระดาษ -->
+                <div class="nd-item-grid-12 nd-text-center nd-mb-1">
+                  12
+                </div>
+              </div>
+</textarea></pre>
+          </div>
+        </div>
+        <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+          <b>Grid 6 </b>&nbsp;&nbsp;&nbsp;เหมาะสำหรับต้องการจัดองค์ประกอบให้สมดุลแบ่งสองข้างเท่ากัน สามารถใช้ทำฟอร์มเพื่อแบ่งซ้ายขวาได้
+        </p>
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-12">
+            <pre
+              class="nd-w-10 nd-m-a nd-h-px-22"
+            ><textarea class="language-html" readonly>
+              
+              <!-- -->
+              <div class="nd-grid nd-w-9 nd-m-a">
+                <!-- ซ้าย -->
+                <div class="nd-item-grid-6 nd-text-center  nd-mb-1">
+                  6
+                </div>
+
+                <!-- ขวา -->
+                <div class="nd-item-grid-6 nd-text-center  nd-mb-1">
+                  6
+                </div>
+              </div>
+</textarea></pre>
+          </div>
+        </div>
+        <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+          <b>Grid 3 </b>&nbsp;&nbsp;&nbsp;เหมาะสำหรับต้องการจัดองค์ประกอบให้แบ่งออกเป็นสี่ส่วน เหมาะสำหรับทำฟอร์มที่มีข้อความกำกับไว้ในส่วนด้านหน้า
+        </p>
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-12">
+            <pre
+              class="nd-w-10 nd-m-a nd-h-px-28"
+            ><textarea class="language-html" readonly>
+                
+              <!-- -->
+              <div class="nd-grid nd-w-9 nd-m-a">
+                <!-- -->
+                <div class="nd-item-grid-3 nd-text-center  nd-mb-1">
+                  3
+                </div>
+                <div class="nd-item-grid-3 nd-text-center  nd-mb-1">
+                  3
+                </div>
+                <div class="nd-item-grid-3 nd-text-center  nd-mb-1">
+                  3
+                </div>
+                <div class="nd-item-grid-3 nd-text-center  nd-mb-1">
+                  3
+                </div>
+              </div>
+</textarea></pre>
+          </div>
+        </div>
+
+        <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+          <b>Grid 2 </b>&nbsp;&nbsp;&nbsp;เหมาะสำหรับต้องการจัดองค์ประกอบให้.. นึกไม่ออกละไปหาเหตุผลกันเอาเองละกัน
+        </p>
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-12">
+            <pre
+              class="nd-w-10 nd-m-a nd-h-px-37"
+            ><textarea class="language-html" readonly>
+                  
+              <!-- -->
+              <div class="nd-grid nd-w-9 nd-m-a">
+                <!-- -->
+                <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+                  2
+                </div>
+                <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+                  2
+                </div>
+                <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+                  2
+                </div>
+                <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+                  2
+                </div>
+                <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+                  2
+                </div>
+                <div class="nd-item-grid-2 nd-text-center  nd-mb-1">
+                  2
+                </div>
+              </div>
+
+</textarea></pre>
+          </div>
+        </div>
+
+
+        <!-- // -->
+        <span class="nd-mb-2 nd-w-10">
+          <h3 class="nd-ml-6">Header</h3>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">ส่วนหนึ่งของเว็บไซต์ที่ตั้งอยู่บนส่วนบนสุดของหน้าเว็บ, ซึ่งมักประกอบไปด้วยข้อมูลหรือองค์ประกอบต่าง ๆ ที่แสดงข้อมูลหลักของเว็บไซต์นั้น ๆ. Header เป็นส่วนที่สำคัญในการให้ผู้ใช้รับทราบเนื้อหาหลัก
+          </p>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">
+            ของเว็บไซต์และช่วยให้นำทางไปสู่ส่วนต่าง ๆ ของเว็บไซต์ได้อย่างรวดเร็ว.</p>
+        </span>
+
+        <div class="nd-grid nd-w-9 nd-m-a nd-mb-2">
+          <div class="nd-item-grid-12">
+            <div class="nd-grid nd-mb-2">
+              <div class="nd-item-grid-12 nd-text-center nd-bg-linear-green nd-color-white">
+                Name System
+              </div>
+            </div>
+
+            <div class="nd-grid">
+              <div class="nd-item-grid-12 nd-text-center nd-bg-linear-blue nd-color-white">
+                Name System
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-12">
+            <pre
+              class="nd-w-10 nd-m-a nd-h-px-40"
+            ><textarea class="language-html" readonly>
+        
+    <!---->
+    <div class="nd-grid nd-w-10">
+      <div class="
+      nd-item-grid-12 
+      nd-text-center 
+      nd-bg-linear-green 
+      nd-color-white
+      ">
+        Name System
+      </div>
+    </div>
+
+    <!---->
+    <div class="nd-grid nd-w-10">
+      <div class="
+      nd-item-grid-12 
+      nd-text-center 
+      nd-bg-linear-blue 
+      nd-color-white
+      ">
+        Name System
+      </div>
+    </div>
+
+      </textarea></pre>
+          </div>
+          
+          
+        </div>
+        <!-- // -->
+        <!-- // -->
+        <span class="nd-mb-2 nd-w-10">
+          <h3 class="nd-ml-6">Flow Approve Element</h3>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">CDN สำหรับใช้งาน</p>
+        </span>
+        <div class="nd-grid nd-w-9 nd-m-a nd-gap-2">
+          <div class="nd-item-grid-5">
+            <pre
+              class="nd-w-10 nd-m-a nd-h-px-23"
+            ><textarea class="language-html" readonly>
+        
+    <!-- Button for Switch ( ใช้ในกรณีสั่งเปิดปิดเพื่อสลับ toggle ) -->
+    <div class="nd-grid nd-gap-2 nd-w-8">
+      <div class="nd-item-grid-5"></div>
+      <div class="nd-item-grid-7">
+        <div class="nd-grid nd-w-px-60 nd-h-px-18 nd-gap-2">
+          <div class="nd-item-grid-4">
+            <div
+              class="nd-card nd-pl-1 nd-pb-1 nd-pt-1 nd-pr-1 nd-w-8 nd-radius-1 nd-text-center nd-h-px-13"
+            >
+              <div style="background-color: bisque" class="nd-radius-1">
+                <span class="nd-text-center nd-size-12 nd-w-10"
+                  >Acknowledge</span
+                >
+              </div>
+              <div class="nd-mb-2 nd-mt-2">
+                <button class="nd-btn-disable">Disabled</button>
+              </div>
+              <div>
+                <input type="text" class="nd-w-8 nd-input-smail" disabled />
+              </div>
+            </div>
+          </div>
+
+          <div class="nd-item-grid-4">
+            <div
+              class="nd-card nd-pl-1 nd-pb-1 nd-pt-1 nd-pr-1 nd-w-8 nd-radius-1 nd-text-center nd-h-px-13"
+            >
+              <div style="background-color: bisque" class="nd-radius-1">
+                <span class="nd-text-center nd-size-12 nd-w-10"
+                  >Checked</span
+                >
+              </div>
+              <div class="nd-mb-2 nd-mt-2">
+                <button class="nd-btn-disable">Disabled</button>
+              </div>
+              <div>
+                <input type="text" class="nd-w-8 nd-input-smail" disabled />
+              </div>
+            </div>
+          </div>
+
+          <div class="nd-item-grid-4">
+            <div
+              class="nd-card nd-pl-1 nd-pb-1 nd-pt-1 nd-pr-1 nd-w-8 nd-radius-1 nd-text-center nd-h-px-13"
+            >
+              <div style="background-color: bisque" class="nd-radius-1">
+                <span class="nd-text-center nd-size-12 nd-w-10"
+                  >Prepared</span
+                >
+              </div>
+              <div class="nd-mb-2 nd-mt-2">
+                <button class="nd-btn-success nd-size-12">Submit</button>
+              </div>
+              <div>
+                <input type="text" class="nd-w-8 nd-input-smail" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </textarea></pre>
+          </div>
+          <div class="nd-item-grid-7">
+            <div class="nd-grid nd-w-px-60 nd-h-px-18 nd-mt-5 nd-pl-7">
+              <div class="nd-item-grid-4">
+                <div
+                  class="nd-card nd-pl-1 nd-pb-1 nd-pt-1 nd-pr-1 nd-w-9 nd-radius-1 nd-text-center nd-h-px-15"
+                >
+                  <div style="background-color: bisque" class="nd-radius-1">
+                    <span class="nd-text-center nd-size-12 nd-w-10"
+                      >Acknowledge</span
+                    >
+                  </div>
+                  <div class="nd-mb-2 nd-mt-2">
+                    <button class="nd-btn-disable">Disabled</button>
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      class="nd-w-10 nd-input-smail"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="nd-item-grid-4">
+                <div
+                  class="nd-card nd-pl-1 nd-pb-1 nd-pt-1 nd-pr-1 nd-w-9 nd-radius-1 nd-text-center nd-h-px-15"
+                >
+                  <div style="background-color: bisque" class="nd-radius-1">
+                    <span class="nd-text-center nd-size-12 nd-w-10"
+                      >Checked</span
+                    >
+                  </div>
+                  <div class="nd-mb-2 nd-mt-2">
+                    <button class="nd-btn-disable">Disabled</button>
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      class="nd-w-10 nd-input-smail"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="nd-item-grid-4">
+                <div
+                  class="nd-card nd-pl-1 nd-pb-1 nd-pt-1 nd-pr-1 nd-w-9 nd-radius-1 nd-text-center nd-h-px-15"
+                >
+                  <div style="background-color: bisque" class="nd-radius-1">
+                    <span class="nd-text-center nd-size-12 nd-w-10"
+                      >Prepared</span
+                    >
+                  </div>
+                  <div class="nd-mb-2 nd-mt-2">
+                    <button class="nd-btn-success nd-size-12">Submit</button>
+                  </div>
+                  <div>
+                    <input type="text" class="nd-w-10 nd-input-smail" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // -->
+
+        <!-- // -->
+        <span class="nd-mb-2 nd-w-10">
+          <h3 class="nd-ml-6">Options</h3>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">CDN สำหรับใช้งาน</p>
+        </span>
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-12 nd-mb-2">
+            <div class="nd-grid nd-mb-2">
+              <div class="nd-grid nd-item-grid-6">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1">
+                    Name | ชื่อ-นามสกุล :
+                  </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input type="text" class="nd-input-normal nd-w-10" />
+                </div>
+              </div>
+              <div class="nd-grid nd-item-grid-6 nd-ml-3">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1">
+                    Employee number | เลขประจำตัว :
+                  </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input type="text" class="nd-input-normal nd-w-10" />
+                </div>
+              </div>
+            </div>
+            <div class="nd-grid nd-mb-2">
+              <div class="nd-grid nd-item-grid-6">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1"> Section | แผนก : </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input type="text" class="nd-input-normal nd-w-10" />
+                </div>
+              </div>
+              <div class="nd-grid nd-item-grid-6 nd-ml-3">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1">
+                    Car register no | ทะเบียนรถ :
+                  </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input type="text" class="nd-input-normal nd-w-10" />
+                </div>
+              </div>
+            </div>
+            <div class="nd-grid nd-mb-2">
+              <div class="nd-grid nd-item-grid-6">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1">
+                    Emp No. | รหัสพนักงาน :
+                  </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input
+                    type="text"
+                    class="nd-inline nd-input-normal nd-w-7 nd-mr-1"
+                  />
+                  <button class="nd-btn-warning nd-inline">Urgent</button>
+                </div>
+              </div>
+              <div class="nd-grid nd-item-grid-6 nd-ml-3">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1">
+                    Forcase Date | วันเวลาที่ต้องการ :
+                  </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input type="text" class="nd-input-normal nd-w-10" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nd-item-grid-12">
+            <pre
+              class="nd-w-10 nd-m-a"
+              style="height: 1350px"
+            ><textarea class="language-html" readonly>
+        
+    <!-- Button for Switch ( ใช้ในกรณีสั่งเปิดปิดเพื่อสลับ toggle ) -->
+    <div class="nd-grid nd-mb-2">
+
+      <div class="nd-grid nd-item-grid-6">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Name | ชื่อ-นามสกุล : 
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-input-normal nd-w-10"/>
+        </div>
+
+      </div>
+      <div class="nd-grid nd-item-grid-6 nd-ml-3">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Employee number | เลขประจำตัว : 
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-input-normal nd-w-10"/>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="nd-grid nd-mb-2">
+
+      <div class="nd-grid nd-item-grid-6">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Section | แผนก : 
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-input-normal nd-w-10"/>
+        </div>
+
+      </div>
+      <div class="nd-grid nd-item-grid-6 nd-ml-3">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Car register no | ทะเบียนรถ :
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-input-normal nd-w-10"/>
+        </div>
+        
+      </div>
+
+    </div>
+    <div class="nd-grid nd-mb-2">
+
+      <div class="nd-grid nd-item-grid-6">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Emp No. | รหัสพนักงาน : 
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-inline nd-input-normal nd-w-7 nd-mr-1 "/>
+          <button class="nd-btn-warning nd-inline" >Urgent</button>
+        </div>
+
+      </div>
+      <div class="nd-grid nd-item-grid-6 nd-ml-3">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Forcase Date | วันเวลาที่ต้องการ : 
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-input-normal nd-w-10"/>
+        </div>
+        
+      </div>
+
+    </div>
+      </textarea></pre>
+          </div>
+        </div>
+        <!-- // -->
+
+        <!-- // -->
+        <span class="nd-mb-2 nd-w-10">
+          <h3 class="nd-ml-6">Template</h3>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">CDN สำหรับใช้งาน</p>
+        </span>
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-12 nd-mb-2">
+            <div class="nd-grid nd-mb-2">
+              <div class="nd-grid nd-item-grid-6">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1">
+                    Name | ชื่อ-นามสกุล :
+                  </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input type="text" class="nd-input-normal nd-w-10" />
+                </div>
+              </div>
+              <div class="nd-grid nd-item-grid-6 nd-ml-3">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1">
+                    Employee number | เลขประจำตัว :
+                  </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input type="text" class="nd-input-normal nd-w-10" />
+                </div>
+              </div>
+            </div>
+            <div class="nd-grid nd-mb-2">
+              <div class="nd-grid nd-item-grid-6">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1"> Section | แผนก : </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input type="text" class="nd-input-normal nd-w-10" />
+                </div>
+              </div>
+              <div class="nd-grid nd-item-grid-6 nd-ml-3">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1">
+                    Car register no | ทะเบียนรถ :
+                  </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input type="text" class="nd-input-normal nd-w-10" />
+                </div>
+              </div>
+            </div>
+            <div class="nd-grid nd-mb-2">
+              <div class="nd-grid nd-item-grid-6">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1">
+                    Emp No. | รหัสพนักงาน :
+                  </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input
+                    type="text"
+                    class="nd-inline nd-input-normal nd-w-7 nd-mr-1"
+                  />
+                  <button class="nd-btn-warning nd-inline">Urgent</button>
+                </div>
+              </div>
+              <div class="nd-grid nd-item-grid-6 nd-ml-3">
+                <div class="nd-item-grid-5 nd-text-right">
+                  <span class="nd-size-13 nd-mr-1">
+                    Forcase Date | วันเวลาที่ต้องการ :
+                  </span>
+                </div>
+                <div class="nd-item-grid-7">
+                  <input type="text" class="nd-input-normal nd-w-10" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nd-item-grid-12">
+            <pre
+              class="nd-w-10 nd-m-a"
+              style="height: 1350px"
+            ><textarea class="language-html" readonly>
+        
+    <!-- Button for Switch ( ใช้ในกรณีสั่งเปิดปิดเพื่อสลับ toggle ) -->
+    <div class="nd-grid nd-mb-2">
+
+      <div class="nd-grid nd-item-grid-6">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Name | ชื่อ-นามสกุล : 
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-input-normal nd-w-10"/>
+        </div>
+
+      </div>
+      <div class="nd-grid nd-item-grid-6 nd-ml-3">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Employee number | เลขประจำตัว : 
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-input-normal nd-w-10"/>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="nd-grid nd-mb-2">
+
+      <div class="nd-grid nd-item-grid-6">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Section | แผนก : 
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-input-normal nd-w-10"/>
+        </div>
+
+      </div>
+      <div class="nd-grid nd-item-grid-6 nd-ml-3">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Car register no | ทะเบียนรถ :
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-input-normal nd-w-10"/>
+        </div>
+        
+      </div>
+
+    </div>
+    <div class="nd-grid nd-mb-2">
+
+      <div class="nd-grid nd-item-grid-6">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Emp No. | รหัสพนักงาน : 
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-inline nd-input-normal nd-w-7 nd-mr-1 "/>
+          <button class="nd-btn-warning nd-inline" >Urgent</button>
+        </div>
+
+      </div>
+      <div class="nd-grid nd-item-grid-6 nd-ml-3">
+
+        <div class="nd-item-grid-5 nd-text-right">
+          <span class="nd-size-13 nd-mr-1">
+            Forcase Date | วันเวลาที่ต้องการ : 
+          </span>
+        </div>
+        <div class="nd-item-grid-7">
+          <input type="text" class="nd-input-normal nd-w-10"/>
+        </div>
+        
+      </div>
+
+    </div>
+      </textarea></pre>
+          </div>
+        </div>
+        <!-- // -->
+
+        <!-- // -->
+        <span class="nd-mb-2 nd-w-10">
+          <h3 class="nd-ml-6">Switch</h3>
+          <p class="nd-ml-6 nd-w-10 nd-size-13 nd-mb-2">CDN สำหรับใช้งาน</p>
+        </span>
+        <div class="nd-grid nd-w-9 nd-m-a">
+          <div class="nd-item-grid-8">
+            <pre
+              class="nd-w-10 nd-m-a nd-h-px-11"
+            ><textarea class="language-html" readonly>
+        
+    <!-- Button for Switch ( ใช้ในกรณีสั่งเปิดปิดเพื่อสลับ toggle ) -->
+    <label class="nd-switch">
+        <input type="checkbox">
+        <span class="nd-slider"></span>
+    </label>
+      </textarea></pre>
+          </div>
+          <div class="nd-item-grid-4">
+            <div class="nd-mb-1 nd-ml-3">
+              <label class="nd-switch nd-mt-4 nd-ml-3 nd-mr-1">
+                <input type="checkbox" />
+                <span class="nd-slider"></span>
+              </label>
+              <span class="nd-size-12">เปิดไฟ</span>
+              <br />
+            </div>
+          </div>
+        </div>
+        <!-- // -->
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+    <script>
+      const copyButtonLabel = "คัดลอก";
+
+      // use a class selector if available
+      let blocks = document.querySelectorAll("pre");
+
+      blocks.forEach((block) => {
+        // only add button if browser supports Clipboard API
+        if (navigator.clipboard) {
+          let button = document.createElement("button");
+
+          button.innerText = copyButtonLabel;
+          block.appendChild(button);
+
+          button.addEventListener("click", async () => {
+            await copyCode(block, button);
+          });
+        }
+      });
+
+      async function copyCode(block, button) {
+        let code = block.querySelector("textarea");
+        console.log(block, code);
+        let text = code.value;
+
+        await navigator.clipboard.writeText(text);
+
+        // visual feedback that task is completed
+        button.innerText = "คัตลอกสำเร็จ";
+
+        setTimeout(() => {
+          button.innerText = copyButtonLabel;
+        }, 700);
+      }
+    </script>
+  </body>
+</html>
